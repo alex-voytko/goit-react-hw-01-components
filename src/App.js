@@ -2,13 +2,15 @@
 а также все файлы json - все данные которые нам приходят.
 В функции App мы должные определить все пропсы, которые будем использовать в компонентах
 и связать их ссылками на json объекты или массив объектов */
-import React from "react"
+// import React from "react"
 import Profile from "./components/Profile"
 import user from "./user.json"
-import Statistics from "./components/Statistics"
+import StatList from "./components/StatList";
 import statData from "./statistical-data.json"
-// import FriendList from "./components/FriendList"
-// import TransactionHistory from "./components/TransactionHistory"
+import FriendList from "./components/FriendList"
+import friends from "./friends.json"
+import TransactionHistory from "./components/TransactionHistory"
+import transactionHistory from "./transaction-history.json"
 
 const App = () => (
   <div>
@@ -21,26 +23,15 @@ const App = () => (
       views={user.stats.views}
       likes={user.stats.likes}
     />
-
-    <section class="statistics">
-      <h2 class="title">{statData.title}</h2>
-      <ul class="stat-list">
-      {statData.map((statistic) => (
-        <li class="item" key={statistic.id}>
-          <Statistics
-            // title="Upload stats"
-            id={statistic.id}
-            label={statistic.label}
-            percentage={statistic.percentage}
-          />
-        </li>
-      ))}
-      </ul>
-  </section>
-    {/* <FriendList
-      
-    /> */}
-    {/* <TransactionHistory/> */}
+    <StatList
+      statistics={statData}
+    />
+    <FriendList
+      friends={friends}
+    />
+    <TransactionHistory
+      items={transactionHistory}
+    />
   </div>
 )
 
