@@ -3,7 +3,7 @@
 В функции App мы должные определить все пропсы, которые будем использовать в компонентах
 и связать их ссылками на json объекты или массив объектов */
 // import React from "react"
-import Profile from "./components/Profile"
+// import Profile from "./components/Profile"
 import user from "./user.json"
 import StatList from "./components/StatList";
 import statData from "./statistical-data.json"
