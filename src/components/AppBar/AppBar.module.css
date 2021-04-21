@@ -1,0 +1,43 @@
+@value colorForBackground from "../../vars.module.css";
+@value accentColor from "../../vars.module.css";
+
+.Header {
+    background-color: colorForBackground;
+    height: 100px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.headerWraper {
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoContainer {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(./camera.svg);
+    background-position: center;
+}
+.Button {
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color: accentColor;
+    color: white;
+}
+.Button:first-child {
+    margin-right: 20px;
+}
+.Button:hover {
+    background-color: white;
+    color: accentColor;
+    border: 1px solid accentColor;
+}
+.buttonContainer {
+    display: flex;
+}

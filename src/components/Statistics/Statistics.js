@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styles from "./Statistics.module.css"
 // import statData from "./../statistical-data.json"
 
 const Statistics = ({id, label, percentage}) => (
-  <li class="item" key={id}>
-    <span class="label">{label}</span>
-    <span class="percentage">{percentage}</span>
+  <li className={styles.item} key={id}>
+    <span className={styles.label}>{label}</span>
+    <span className={styles.percentage}>{percentage}</span>
 </li>
 )
 

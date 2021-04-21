@@ -1,0 +1,9 @@
+/* Colors: */
+@value colorForBackground: #E5F7FF;
+@value colorForBackground2: #F8FBFF;
+@value accentColor: #0BA8EE;
+@value mainTextColor: #2E3B48;
+@value lightTextColor: #92A3B5;
+
+/* box-shadow: */
+@value friendOnlineShadow: 0px 4px 8px 0px rgba(121, 194, 249, 0.38);

@@ -1,0 +1,19 @@
+@value mainTextColor from "../../vars.module.css";
+
+.Section {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Title {
+    display: block;
+    color: mainTextColor;
+    letter-spacing: 1px;
+    line-height: 0;
+}
+.List {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}

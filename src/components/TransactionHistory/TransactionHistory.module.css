@@ -1,0 +1,36 @@
+@value mainTextColor from "../../vars.module.css";
+@value lightTextColor from "../../vars.module.css";
+@value accentColor from "../../vars.module.css";
+@value colorForBackground from "../../vars.module.css";
+
+.Section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+table {
+    width: 100%;
+}
+.columnName {
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: accentColor;
+}
+td {
+    text-align: center;
+    padding: 10px;
+    color: lightTextColor;
+    background-color: #F8FBFF;
+    letter-spacing: 2px;
+}
+td.textValue {
+    color: mainTextColor;
+    background-color: #eeeeee;
+}
+td:hover {
+    background-color: colorForBackground;
+}

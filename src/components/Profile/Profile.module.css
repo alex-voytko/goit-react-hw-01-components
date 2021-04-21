@@ -1,0 +1,50 @@
+@value mainTextColor from "../../vars.module.css";
+@value lightTextColor from "../../vars.module.css";
+
+.profileContainer {
+    display: flex;
+    padding: 30px
+}
+.Avatar {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+.avatarContainer {
+    width: 300px;
+    height: 400px;
+}
+.textContainer {
+    margin-left: 50px;
+}
+.Name {
+    font-size: 40px;
+    line-height: 1.32;
+    color: mainTextColor;
+}
+.Tag, .Location {
+    color: lightTextColor;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item {
+    margin-bottom: 25px;
+    display: flex;
+}
+.item:last-child {
+    margin-bottom: 0;
+}
+.textBlock1 {
+    margin-bottom: 50px;
+}
+.Label {
+    display: block;
+    color: mainTextColor;
+    margin-right: 16px;
+    font-weight: bold;
+}
+.Quantity {
+    display: block;
+    color: lightTextColor;
+    letter-spacing: 2px;
+}

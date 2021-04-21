@@ -1,0 +1,17 @@
+@value mainTextColor from "../../vars.module.css";
+@value lightTextColor from "../../vars.module.css";
+
+
+.label {
+    display: block;
+    color: mainTextColor;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.percentage {
+    display: block;
+    text-align: center;
+    color: lightTextColor;
+    font-style: italic;
+    letter-spacing: 3px;
+}

@@ -1,0 +1,17 @@
+@value mainTextColor from "../../vars.module.css";
+@value lightTextColor from "../../vars.module.css";
+
+.sectionContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border-top: 1px solid lightTextColor; */
+    /* border-bottom: 1px solid lightTextColor; */
+    background-color: #F8FBFF;
+}
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+
+}

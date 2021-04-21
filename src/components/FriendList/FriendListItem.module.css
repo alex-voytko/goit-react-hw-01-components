@@ -1,0 +1,42 @@
+@value lightTextColor from "../../vars.module.css";
+@value accentColor from "../../vars.module.css";
+@value friendOnlineShadow from "../../vars.module.css";
+
+.item {
+    padding-top: 20px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #EEEEEE;
+}
+.item:hover {
+    box-shadow: friendOnlineShadow;
+}
+.statusOffline {
+    display: block;
+    text-align: center;
+    color: lightTextColor;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.statusOnline {
+    display: block;
+    text-align: center;
+    color: accentColor;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.statusOnline::before {
+    content: '\25CF';
+    color: accentColor;
+    margin-right: 3px;
+}
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.name {
+    display: block;
+    text-align: center;
+}
